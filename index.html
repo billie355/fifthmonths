@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A cute, pink, animated 5th monthsary website with hearts, gallery, and a heartfelt letter." />
+  <title>Happy 5th Monthsary</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero" aria-label="Anniversary hero">
+    <div class="container hero-inner reveal" style="--delay:0s">
+      <h1 class="title sacramento">Happy 5th Monthsary</h1>
+      <p class="subtitle">Billy Joe ❤ <span class="partner-name">Chrish-Ann</span></p>
+      <div class="actions">
+        <button id="toggle-hearts" class="btn" aria-pressed="true" aria-label="Toggle floating hearts">💗 Hearts: On</button>
+        <button id="toggle-theme" class="btn" aria-pressed="false" aria-label="Toggle light or dark theme">🌙 Dark Mode</button>
+      </div>
+    </div>
+    <div id="hearts-container" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- Photo Gallery -->
+    <section id="gallery" class="gallery-section" aria-label="Photo gallery">
+      <div class="container grid">
+        <figure class="card reveal" style="--delay:0.05s" tabindex="0" aria-label="Open Memory 1">
+          <img src="kamu1.jpg" alt="Memory 1 — Our shared moment" />
+          <figcaption>FOTO KAMU</figcaption>
+        </figure>
+        <figure class="card reveal" style="--delay:0.1s" tabindex="0" aria-label="Open Memory 2">
+          <img src="kamu2.jpg" alt="Memory 2 — Laughs and late-night talks" />
+          <figcaption>FOTO KAMU</figcaption>
+        </figure>
+        <figure class="card reveal" style="--delay:0.15s" tabindex="0" aria-label="Open Memory 3">
+          <img src="kamu3.jpg" alt="Memory 3 — A favorite day together" />
+          <figcaption>FOTO KAMU</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Letter Section -->
+    <section id="letter" class="letter-section" aria-label="Letter for my love">
+      <div class="container">
+        <div class="letter-card reveal" style="--delay:0.05s">
+          <p class="greeting">To my Babi,</p>
+          <p>Happy 5th monthsary! Babi sorry if na late yung gawa ko sayo wala akong magamit na device e Thank you so much kase lagi ka nandiyan para sakin and dika nag sasawa kahit ikaw lagi gumagastos pag mag kasama tayo babawi po ako sayo soon babi mwuuuaaahhhhhh sorry po and thankful ako kase nakilala kita iloveyou so much and Happy 5th Monthsary Babi Mwuuaahh</p>
+          <p class="signature">— <span class="sacramento">Billy Joe</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" aria-describedby="lightbox-desc" hidden>
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-content" role="document">
+      <button class="lightbox-close" aria-label="Close (Esc)" title="Close (Esc)" data-close>&times;</button>
+      <img id="lightbox-image" alt="" />
+      <p id="lightbox-caption" class="caption"></p>
+      <p id="lightbox-desc" class="sr-only">Large view of the selected memory photo with caption.</p>
+    </div>
+  </div>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <p>Made with 💖 for our monthsary.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
